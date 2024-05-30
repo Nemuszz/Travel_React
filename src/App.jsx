@@ -11,24 +11,22 @@ function NoPage() {
     return null;
 }
 
-
 const App = () =>{
     return(
             <>
                 <BrowserRouter>
                     <Routes>
-                <Route path="/" element={<Layout/>}>
-                    <Route index element={<Home/>}/>
-                    <Route path="/about" element={<About/>}/>
-                    <Route path="/blogs" element={<Blogs/>}/>
-                    <Route path="/blogs/:id" element={<Blogsdetails/>}/>
-                    <Route path="/places" element={<PlacesRoute/>}/>
-                    <Route path="*" element={<NoPage/>}/>
-            </Route>
+                        <Route path="/" element={<Layout/>}>
+                            <Route index element={<Home/>}/>
+                            <Route path="/about" element={<About/>}/>
+                            <Route path="/blogs" element={<Blogs/>}/>
+                            <Route path="/blogs/:id" element={<Blogsdetails/>}/>
+                            <Route path="/places" element={<PlacesRoute/>}/>
+                            <Route path="*" element={<NoPage/>}/>
+                        </Route>
                     </Routes>
-                    </BrowserRouter>
-                </>
-
+                </BrowserRouter>
+            </>
     );
 };
 export default App;
