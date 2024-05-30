@@ -1,6 +1,6 @@
-import React from 'react';
 import {FaUserCircle} from "react-icons/fa";
 import {Link} from "react-router-dom";
+
 
 const navbarLinks = [
 
@@ -22,6 +22,7 @@ const navbarLinks = [
     }
 
 ]
+// eslint-disable-next-line react/prop-types
 const ResponsiveMenu = ({showMenu, setShowMenu}) => {
     return(
     <div
@@ -43,10 +44,11 @@ const ResponsiveMenu = ({showMenu, setShowMenu}) => {
                 </div>
 
             </div>
-            {/* Navlinks section*/}
+            {/* NavLinks section*/}
             <div className='text-black mt-12'>
                 <ul className='space-y-4 text-xl'>
                     {navbarLinks.map(({ name, link}) => (
+                        // eslint-disable-next-line react/jsx-key
                      <li>
                          <Link
                          to={link}
@@ -55,19 +57,13 @@ const ResponsiveMenu = ({showMenu, setShowMenu}) => {
                              {name}
                          </Link>
                      </li>
-
-
-                        ))
-                    }
+                        ))}
                 </ul>
             </div>
         </div>
-
     </div>
     );
-
 };
-
 
 export default ResponsiveMenu;
 
