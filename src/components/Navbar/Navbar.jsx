@@ -2,6 +2,9 @@ import {Link, NavLink} from "react-router-dom";
 import LogoImg from '../../assets/logotravel.png'
 import '../../index.css'
 import {FaCaretDown} from 'react-icons/fa'
+import {HiMenuAlt1, HiMenuAlt3} from "react-icons/hi";
+import ResponsiveMenu from './ResponsiveMenu';
+import React, {useState} from "react";
 
 const dropDownLinks = [
     {
@@ -19,6 +22,10 @@ const dropDownLinks = [
 ]
 
 const Navbar = () =>{
+    const [showMenu, setShowMenu] = useState(false);
+    const toggleMenu = () =>{
+        setShowMenu(!showMenu);
+    }
     return(
         <>
         <div className='fixed top-0 right-0 w-full bg-white text-black shadow-md'>
@@ -72,7 +79,7 @@ const Navbar = () =>{
                                 </div>
                                 <div className='absolute -left-9 z-[9999] hidden  group-hover:block shadow-md
                                 text-black w-[150px] bg-white p-2'>
-                                    <ul >
+                                    <ul>
                                         {dropDownLinks.map((data ) => {
                                             return(
                                                 <li key={data.name}>
@@ -87,8 +94,26 @@ const Navbar = () =>{
                             </li>
                         </ul>
                     </div>
+
+                    {/* Book Now button*/}
+                    <div className='flex items-center gap-4'>
+                        <button className='bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r
+                    hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full'
+                        >Book now</button>
+                        {/* Mobile Menu */}
+                        <div className='md:hidden block'>
+                            {showMenu? (<HiMenuAlt1
+                                onClick={toggleMenu}
+                                className='cursor-pointer transition-all' size={30}
+                            />):(<HiMenuAlt3
+                                onClick={toggleMenu}
+                                className='cursor-pointer transition-all' size={30}
+                            />)}
+                        </div>
+                    </div>
                 </div>
             </div>
+            <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu}/>
         </div>
         </>
     )
