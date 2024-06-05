@@ -1,6 +1,7 @@
 import {IoLocationSharp} from "react-icons/io5";
 
 
+// eslint-disable-next-line react/prop-types
 const PlacesCard = ({img, title, location, description, price, type}) => {
   return(
   <div className="shadow-lg transition-all duration-500 hover:shadow-xl

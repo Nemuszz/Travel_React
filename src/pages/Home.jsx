@@ -1,6 +1,10 @@
 import HomeImg from '../assets/hometravel.jpg'
+import Poster from '../assets/bannerimage.jpg'
 import Hero from "../Hero/Hero.jsx";
 import Places from "../components/Places/Places.jsx";
+import BannerImg from "../components/BannerImg/BannerImg.jsx";
+
+
 const Home = () =>{
     return(
         <>
@@ -10,6 +14,7 @@ const Home = () =>{
                     <Hero/>
                 </div>
                 <Places/>
+                <BannerImg img={Poster}/>
             </div>
         </>
     )
