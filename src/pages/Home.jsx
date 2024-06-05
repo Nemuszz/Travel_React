@@ -1,5 +1,6 @@
 import HomeImg from '../assets/hometravel.jpg'
 import Hero from "../Hero/Hero.jsx";
+import Places from "../components/Places/Places.jsx";
 const Home = () =>{
     return(
         <>
@@ -8,6 +9,7 @@ const Home = () =>{
                     <img className='w-full absolute h-full ' alt='travel' src={HomeImg}/>
                     <Hero/>
                 </div>
+                <Places/>
             </div>
         </>
     )
