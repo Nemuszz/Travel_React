@@ -3,6 +3,7 @@ import Poster from '../assets/bannerimage.jpg'
 import Hero from "../Hero/Hero.jsx";
 import Places from "../components/Places/Places.jsx";
 import BannerImg from "../components/BannerImg/BannerImg.jsx";
+import Blogs from "./Blogs.jsx";
 
 
 const Home = () =>{
@@ -15,6 +16,7 @@ const Home = () =>{
                 </div>
                 <Places/>
                 <BannerImg img={Poster}/>
+                <Blogs/>
             </div>
         </>
     )
