@@ -4,6 +4,8 @@ import Hero from "../Hero/Hero.jsx";
 import Places from "../components/Places/Places.jsx";
 import BannerImg from "../components/BannerImg/BannerImg.jsx";
 import Blogs from "./Blogs.jsx";
+import Banner from "../components/Banner/Banner.jsx";
+import Banner2 from '../../src/assets/travel-cover2.jpg'
 
 
 const Home = () =>{
@@ -17,6 +19,9 @@ const Home = () =>{
                 <Places/>
                 <BannerImg img={Poster}/>
                 <Blogs/>
+                <Banner/>
+                <BannerImg img={Banner2}/>
+
             </div>
         </>
     )
