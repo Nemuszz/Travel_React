@@ -6,6 +6,7 @@ import BannerImg from "../components/BannerImg/BannerImg.jsx";
 import Blogs from "./Blogs.jsx";
 import Banner from "../components/Banner/Banner.jsx";
 import Banner2 from '../../src/assets/travel-cover2.jpg'
+import Testimonial from '../components/Testimonial/Testimonial.jsx'
 
 
 const Home = () =>{
@@ -21,7 +22,7 @@ const Home = () =>{
                 <Blogs/>
                 <Banner/>
                 <BannerImg img={Banner2}/>
-
+                <Testimonial/>
             </div>
         </>
     )
