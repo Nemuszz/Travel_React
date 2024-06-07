@@ -1,6 +1,10 @@
+import Places from "../components/Places/Places.jsx";
+
 const PlacesRoute = () =>{
     return(
-        <div>Places Route</div>
+        <div className='pt-14'>
+            <Places/>
+        </div>
     )
 }
 export default PlacesRoute
