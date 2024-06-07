@@ -71,6 +71,7 @@ const Footer = () =>{
                                     </h1>
                                     <ul className="flex flex-col gap-3">
                                         {FooterLinks.map((link) => (
+                                            // eslint-disable-next-line react/jsx-key
                                             <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
                                                 <Link
                                                     to={link.link}
@@ -92,6 +93,7 @@ const Footer = () =>{
                                     </h1>
                                     <ul className="flex flex-col gap-3">
                                         {FooterLinks.map((link) => (
+                                            // eslint-disable-next-line react/jsx-key
                                             <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
                                                 <Link
                                                     to={link.link}

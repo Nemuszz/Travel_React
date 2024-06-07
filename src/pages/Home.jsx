@@ -1,11 +1,11 @@
 import HomeImg from '../assets/hometravel.jpg'
 import Poster from '../assets/bannerimage.jpg'
+import Banner2 from '../../src/assets/travel-cover2.jpg'
 import Hero from "../Hero/Hero.jsx";
 import Places from "../components/Places/Places.jsx";
 import BannerImg from "../components/BannerImg/BannerImg.jsx";
 import Blogs from "./Blogs.jsx";
 import Banner from "../components/Banner/Banner.jsx";
-import Banner2 from '../../src/assets/travel-cover2.jpg'
 import Testimonial from '../components/Testimonial/Testimonial.jsx'
 
 
