@@ -11,7 +11,7 @@ const Hero = () =>{
                         <div className='text-white'>
                             <p>Our packages</p>
                             <p
-                                className='font-bold text-3xl'
+                             className='font-bold text-3xl'
                             >Search Your Destination
                             </p>
                         </div>
@@ -62,7 +62,6 @@ const Hero = () =>{
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </>

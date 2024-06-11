@@ -14,9 +14,7 @@ const Location =()=>{
                                 loading='lazy'
                                 referrerPolicy='no-referrer-when-downgrade'
                                 style={{borderRadius: "20px"}}
-
                         ></iframe>
-
                     </div>
                 </div>
             </div>

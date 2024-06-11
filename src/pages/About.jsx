@@ -12,7 +12,6 @@ const About = () =>{
             </p>
                 <br/>
             <p>
-
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 At Travello go, we understand that travel is not just about reaching a destination; it's about immersing yourself in new cultures,
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
